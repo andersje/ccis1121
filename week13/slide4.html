@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.linux-classes.com/includes/class_format.css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Class 13:  Linux Admin 1: Disk quotas</title>
+</head>
+<body>
+<ul class="lectureslide">
+<li>quotas require existence of two files:<ul><li>/quota.user</li><li>/quota.group</li></ul></li>
+<li><span class='unix'>quotacheck -vmc</span> -- verbose, do not remount RO, and create new quota files</li>
+<li>quotacheck is typically run at boot, but not automatically</li>
+<li>next, activate quotas</li>
+<li><span class='unix'>/etc/rc.d/rc.local</span> is a good place for the <span class='unix'>quotaon -a</span> command</li>
+
+<a class="pagelink" href="slide5.html">NEXT</a><br />
+
+<a class="pagelink" href="slide3.html">PREVIOUS</a><br />
+
+<a class="pagelink" href="../index.html">Master Index</a><br />
+
+</body>
+</html>

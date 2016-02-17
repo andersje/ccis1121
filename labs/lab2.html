@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.linux-classes.com/includes/class_format.css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Linux Admin 1 Lab for week 2</title>
+</head>
+<body>
+<h4>Name:</h4><h4>class section:</h4><ol class='worksheet'>
+<li>(12 points) On your workstation, create the users below.  Be sure to satisfy all requirements listed in the table:<br /><table border=1><tr>
+<th>username</th><th>GECOS name</th><th>password</th><th>shell</th></tr>
+ <tr> <td>dangle</td><td>lieutenant</td><td>jim</td><td>/bin/bash</td> </tr>
+ <tr> <td>junior</td><td>deputy</td> <td>travis</td> <td>/bin/sh</td> </tr> 
+ <tr> <td>wiegel</td> <td>deputy</td> <td>trudy</td> <td>/bin/sh</td> </tr> 
+ <tr> <td>kimball</td><td>deputy</td> <td>cheresa</td> <td>/bin/sh</td> </tr> </table></li>
+<li>(6 points) Create groups and assign their members according to the following table: <table border=1> <tr> <th>group name</th> <th>members</th> </tr> <tr> <td>reno</td><td> dangle, wiegel, junior, kimball</td></tr> 
+ <tr> <td>miami</td><td> dangle, wiegel, junior, kimball</td> </tr> 
+ <tr> <td>commanding</td> <td>dangle</td> </tr> <tr><td>competent</td> <td>kimball</td> </tr> 
+ <tr> <td>SWAT</td> <td>dangle, junior</td></tr> </table></li>
+<li>(4 points) For all the users you created above, ensure that only they have permission to view or modify the following files:  .bash_profile .bashrc</li>
+<li>(3 points) Create the directory /home/reno, setgid active and owned by group reno.  Do the same for the directory /home/miami.</li>
+<p><b>Extra Credit</b>:  (3 points) show the single command that will remove all 'other' permissions from all files and directories under /home</p>
+</body>
+</html>

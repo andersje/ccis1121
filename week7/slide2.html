@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.linux-classes.com/includes/class_format.css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Batch: load-based scheduling</title>
+</head>
+<body>
+<ul class="lectureslide">
+<li>batch (+ atrun), at</li>
+<li>at allows you to specify when to run a job:</li>
+<pre>
+[root@gerd2 var]# at now +30 minutes -f /root/find_idiots3.bash<br />
+warning: commands will be executed using (in order) a) $SHELL b) login shell c) /bin/sh
+job 2 at 2002-04-22 15:40
+</pre>
+<li>batch, however, says 'run this job when you are idle':</li>
+<pre>
+[root@gerd2 var]# batch -f /root/find_idiots3.bash
+warning: commands will be executed using (in order) a) $SHELL b) login shell c) /bin/sh
+job 3 at 2002-04-22 15:11
+</pre>
+<li>when will it run?  When the load average drops to what you set with atrun:</li>
+<pre>
+atrun -l 2
+</pre>
+<li>above means that the process will run when load average hits 2 or less</li>
+<li>/etc/at.allow, /etc/at.deny</li>
+
+<a class="pagelink" href="slide3.html">NEXT</a><br />
+
+<a class="pagelink" href="slide1.html">PREVIOUS</a><br />
+
+<a class="pagelink" href="../index.html">Master Index</a><br />
+
+</body>
+</html>
+
+

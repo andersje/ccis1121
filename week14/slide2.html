@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.linux-classes.com/includes/class_format.css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Linux Admin 1:  System Integrity</title>
+</head>
+<body>
+<ul class="lectureslide">
+<li>for CentOS, download the rpm from <a href='http://www.c-corp.net/linux/centos/4/generic/RPMS/i386/tripwire-2.4.1.2-4.i386.rpm'>http://www.c-corp.net/linux/centos/4/generic/RPMS/i386/tripwire-2.4.1.2-4.i386.rpm</a></li>
+<li>open the rpm with software installer, and install it that way</li>
+<li><span class='unix'>/usr/sbin/tripwire-setup-keyfiles</span></li>
+<li>cryptographic setup script will ask for site and local passphrases.  Pick something good</li>
+<li><span class='unix'>/etc/tripwire/twpol.txt</span> should be examined by hand, using vi, nano or gedit</li>
+<li><span class='unix'>tripwire --init 2&gt;errors</span></li>
+<li>if you get errors, examine the policy file and correct the error, then enter new policy with:<br /><span class='unix'>twadmin --create-polfile /etc/tripwire/twpol.txt</span></li>
+</ul>
+
+<a class="pagelink" href="slide3.html">NEXT</a><br />
+
+<a class="pagelink" href="slide1.html">PREVIOUS</a><br />
+
+<a class="pagelink" href="../index.html">Master Index</a><br />
+
+</body>
+</html>

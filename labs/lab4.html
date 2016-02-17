@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.linux-classes.com/includes/class_format.css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Linux Admin 1 Lab for week 4</title>
+</head>
+<body>
+<h4>Name:</h4><h4>class section:</h4><ol class='worksheet'>
+<li>What command is used to prep the system for power off? <br /><p /></li>
+<li>(2 points) Name 2 commands which will reboot the system: <br /><p /></li>
+<li>What does the <span class='unix'>-f</span> flag do to shutdown? <br /><p /></li>
+<li>Starting with the machine powered off, enter single-user mode using GRUB.  Explain how you did this:<br /><p /><br /></li>
+<li>(2 points) How would you command the system to shutdown <em>completely</em> in 20 minutes, and to display a message saying <em>going down for system maintenance</em>? <br /><p /></li>
+<li>What is the PID of <span class='unix'>init</span>? <br /><p /></li>
+<li>What program starts init?<br /><p /></li>
+<li>What runlevel are you currently at? <br /><p /></li>
+<li>what command would switch you to runlevel 3? <br /><p /></li>
+<li>Name 3 services which are started at runlevel 5: <br /><p /></li>
+<li>Name 3 services which are started at runlevel 2:<br /><p /></li>
+<li>What is the primary difference between runlevels 3 and 5?  <br /><p /></li>
+<li>What link in the /etc/rc.d/rc5.d directory ensures that rc.local is run?<br /><p /></li>
+<li>What kind of <span class='unix'>file</span> is <span class='unix'>/etc/rc.d/rc.local</span>? <br /><p /></li>
+<li>Using <span class='unix'>chkconfig</span>, determine all runlevels for which <span class='unix'>sshd</span> is active.  What command did you use, and what was the result?<br /><p /><br /></li>
+<li>Use <span class='unix'>chkconfig</span> to prevent <span class='unix'>ip6tables</span> from starting for runlevel 5.  What is the syntax of the command you used? <br /><p /></li>
+<li>Now, <u>without using <span class='unix'>chkconfig</u> prevent <span class='unix'>sendmail</span> from starting at both runlevel 3 and runlevel 5.  What commands did you have to run?<br /><p /><br /></li>
+<li>(2 points) How would you use chkconfig and grep to show only services which are 'on' at some runlevel?<br /><p /></li>
+<li>(2 points) What command (again, using chkconfig and grep) would show only services which are active at runlevel 5?<br /><p /></li>
+<li>(2 points) What does the number following the K or S in a filename in /etc/rc.d/rc3.d/ indicate?</li>
+
+</body>
+</html>
